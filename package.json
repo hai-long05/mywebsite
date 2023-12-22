@@ -15,7 +15,12 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-is-scrolling": "^1.0.1",
+    "react-router-dom": "^6.21.1",
+    "tailwind-scrollbar": "^3.0.5",
+    "tailwindcss-animation-delay": "^1.2.0",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

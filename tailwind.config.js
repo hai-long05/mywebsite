@@ -73,7 +73,7 @@ export default {
         'slide-left': 'slideLeft 1s ease forwards',
         'slide-right': 'slideRight 1s ease forwards',
         'slide-bottom': 'slideBottom 1s ease forwards',
-        'zoom-in': 'zoomIn 1s ease forwards'
+        'zoom-in': 'zoomIn 1s ease forwards',
       },
     },
   },

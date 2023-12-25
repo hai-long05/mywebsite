@@ -5,7 +5,7 @@ import Home from './components/Home'
 import About from './components/About'
 import { useRef } from 'react'
 import { useOnScreen } from './hooks/useOnScreen'
-import Skills from './components/Skills'
+import Technologies from './components/Technologies'
 import Projects from './components/Projects'
 import Contact from './components/Contact'
 
@@ -17,13 +17,13 @@ function App() {
 
   const homeRef = useRef<HTMLDivElement>(null);
   const aboutRef = useRef<HTMLDivElement>(null);
-  const skillsRef = useRef<HTMLDivElement>(null);
+  const techRef = useRef<HTMLDivElement>(null);
   const projectsRef = useRef<HTMLDivElement>(null);
   const contactRef = useRef<HTMLDivElement>(null);
 
   const homeIsVisible = useOnScreen(homeRef);
   const aboutIsVisible = useOnScreen(aboutRef);
-  const skillsIsVisible = useOnScreen(skillsRef);
+  const techIsVisible = useOnScreen(techRef);
   const projectsIsVisible = useOnScreen(projectsRef);
   const contactIsVisible = useOnScreen(contactRef);
 
@@ -32,8 +32,8 @@ function App() {
       return 'home'
     } else if (aboutIsVisible) {
       return 'about'
-    } else if (skillsIsVisible) {
-      return 'skills'
+    } else if (techIsVisible) {
+      return 'tech'
     } else if (projectsIsVisible) {
       return 'projects'
     } else if (contactIsVisible){
@@ -43,18 +43,19 @@ function App() {
     }
   }
 
-  console.log('Home: ' + homeIsVisible)
-  console.log('About: ' + aboutIsVisible)
+  // window.onbeforeunload = () => {
+  //   window.scrollTo(0, 0);
+  // }
 
   const currentSection = getCurrentSection();
 
   return (
     <>
       <div className='bg-[#1f242d] w-[99vw] h-[100%]'>
-        <Nav currentSection={currentSection} homeRef={homeRef} aboutRef={aboutRef} skillsRef={skillsRef} projectsRef={projectsRef} contactRef={contactRef}/>
+        <Nav currentSection={currentSection} homeRef={homeRef} aboutRef={aboutRef} techRef={techRef} projectsRef={projectsRef} contactRef={contactRef}/>
         <Home elementRef={homeRef} />
-        <About elementRef={aboutRef} />
-        <Skills elementRef={skillsRef} />
+        <About elementRef={aboutRef} homeIsVisible={homeIsVisible} aboutIsVisible={aboutIsVisible}/>
+        <Technologies elementRef={techRef} aboutIsVisible={aboutIsVisible} techIsVisible={techIsVisible} />
         <Projects elementRef={projectsRef} />
         <Contact elementRef={contactRef} />
         <div className='h-[1px]'></div>

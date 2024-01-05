@@ -22,10 +22,10 @@ const About: React.FC<aboutProps> = ({elementRef, homeIsVisible, aboutIsVisible}
                 <FontAwesomeIcon icon={faSchool} size='xs'/>
               </span>
               <div className={'opacity-0 ' + getAnimation('animate-slide-top animation-delay-400')}>
-                <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-primary-color">Leibniz-Gymnasium<span className="bg-blue-100 text-blue-800 text-sm font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-secondary-color dark:text-primary-bg-color ms-3">Abitur</span></h3>
+                <h3 className="flex items-center mb-1 text-lg font-semibold text-gray-900 dark:text-primary-color">Leibniz-Gymnasium Potsdam<span className="bg-blue-100 text-blue-800 text-sm font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-secondary-color dark:text-primary-bg-color ms-3">Abitur</span></h3>
                 <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2016 - 2023</time>
                 <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
-                  I discovered my passion for Coding in the cs-class in my high school, 
+                  I discovered my passion for coding in the cs-class in my high school, 
                   from there I taught myself to code and to solve complex problems.
                   I graduated in 2023 with a mathematics award.
                 </p>
@@ -33,25 +33,27 @@ const About: React.FC<aboutProps> = ({elementRef, homeIsVisible, aboutIsVisible}
           </li>
           <li className="mb-10 ms-6">
               <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                <FontAwesomeIcon icon={faSuitcase} size='xs'/>
+                <FontAwesomeIcon icon={faBuildingColumns} size='xs' />
               </span>
               <div className={'opacity-0 ' + getAnimation('animate-slide-top animation-delay-700')}>
-                <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-primary-color">SAP<span className="bg-blue-100 text-blue-800 text-sm font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-secondary-color dark:text-primary-bg-color ms-3">Work</span></h3>
-                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023 - present</time>
+                <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-primary-color">Berlin School of Economics and Law<span className="bg-blue-100 text-blue-800 text-sm font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-secondary-color dark:text-primary-bg-color ms-3">Bachelor</span></h3>
+                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023 - 2026</time>
                 <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                  All of the pages and components are first designed in Figma and we keep a parity between the two versions even as we update the project.
+                  I am studying Business Informatics at the HWR over the course of the next 3 years 
+                  and I'm looking forward to learn a lot of new things, that I can apply for my work
+                  and projects.
                 </p>
               </div>
           </li>
           <li className="mb-10 ms-6">
               <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-blue-900">
-                <FontAwesomeIcon icon={faBuildingColumns} size='xs' />
+                <FontAwesomeIcon icon={faSuitcase} size='xs'/>
               </span>
               <div className={'opacity-0 ' + getAnimation('animate-slide-top animation-delay-1000')}>
-                <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-primary-color">School of Economics and Law<span className="bg-blue-100 text-blue-800 text-sm font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-secondary-color dark:text-primary-bg-color ms-3">Bachelor</span></h3>
-                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023 - 2026</time>
+                <h3 className="mb-1 text-lg font-semibold text-gray-900 dark:text-primary-color">SAP SE<span className="bg-blue-100 text-blue-800 text-sm font-semibold me-2 px-2.5 py-0.5 rounded dark:bg-secondary-color dark:text-primary-bg-color ms-3">Work</span></h3>
+                <time className="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">2023 - present</time>
                 <p className="text-base font-normal text-gray-500 dark:text-gray-400">
-                  
+                  I'm exited to work for such a known and trusted company.
                 </p>
               </div>
           </li>

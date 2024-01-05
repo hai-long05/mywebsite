@@ -89,7 +89,7 @@ const Technologies: React.FC<technologieProps> = ({elementRef, aboutIsVisible, t
               </div>
             </div>
             <div className='w-full h-[20%]'>
-              <h1 className='text-1xl font-semibold'>Frameworks</h1>
+              <h1 className='text-1xl font-semibold'>Databases</h1>
               <div className='flex flex-row w-full h-full'>
                 {DATABASES.map((database, i) => (
                   <TechCard key={database.name} getAnimation={getAnimation} icon={database.icon} delay={200 * i + 400}/>

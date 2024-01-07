@@ -15,10 +15,10 @@ export type technologie = {
 
 const PROGRAMMING_LANGUAGES: technologie[] = [
   {name: 'HTML', icon: 'https://cdn-icons-png.flaticon.com/512/732/732212.png'},
-  {name: 'CSS', icon: 'https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png'},
+  {name: 'CSS', icon: 'https://cdn.iconscout.com/icon/free/png-256/free-css-7232197-5944375.png?f=webp'},
   {name: 'JavScript', icon: 'https://media.licdn.com/dms/image/D4D12AQEL9aeB8WqRaw/article-cover_image-shrink_600_2000/0/1685204779306?e=2147483647&v=beta&t=jr7Um-vZDvcgCCzx0a48zCEr3RtUyRVqelGOzrpL4bs'},
   {name: 'TypeScript', icon: 'https://cdn-icons-png.flaticon.com/512/5968/5968381.png'},
-  {name: 'Python', icon: 'https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/267_Python-512.png'}
+  {name: 'Python', icon: 'https://static-00.iconduck.com/assets.00/python-icon-512x512-48og66bp.png'}
 ]
 
 const FRAMEWORKS: technologie[] = [
@@ -28,7 +28,7 @@ const FRAMEWORKS: technologie[] = [
 ]
 
 const CLOUD_SERVICES: technologie[] = [
-  {name: 'Firebase', icon: 'https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-2-512.png'}
+  {name: 'Firebase', icon: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Firebase_icon.svg/480px-Firebase_icon.svg.png'}
 ]
 
 const DATABASES: technologie[] = [
